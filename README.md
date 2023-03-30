@@ -3,7 +3,9 @@
 Docker wrapper for `node-sonos-http-api`
 
 **Update source on sever**
+```shell
 ssh server "cd /volume1/docker && rm -rf sonos/ && mkdir sonos && cd sonos && curl -L https://github.com/lukekarrys/docker-node-sonos-http-api/tarball/master | tar xzvf - --strip-components=1"
+```
 
 **Get latest `node-sonos-http-api` source**
 
