@@ -5,8 +5,9 @@ docker run \
   --name sonos \
   --restart=always \
   -d \
-  -v `pwd`/settings.json:/app/settings.json \
-  -v `pwd`/clips:/app/static/clips \
-  -v `pwd`/cache:/app/cache \
-  -v `pwd`/presets:/app/presets \
+  # add volumes for settings, clips, etc
+  # -v `pwd`/settings.json:/app/settings.json \
+  # -v `pwd`/clips:/app/static/clips \
+  # -v `pwd`/cache:/app/cache \
+  # -v `pwd`/presets:/app/presets \
   node-sonos
