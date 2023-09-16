@@ -1,13 +1,3 @@
 #!/usr/bin/env sh
 
-docker run \
-  --net=host \
-  --name sonos \
-  --restart=always \
-  -d \
-  # add volumes for settings, clips, etc
-  # -v `pwd`/settings.json:/app/settings.json \
-  # -v `pwd`/clips:/app/static/clips \
-  # -v `pwd`/cache:/app/cache \
-  # -v `pwd`/presets:/app/presets \
-  node-sonos
+docker run --net=host --name sonos --restart=always -d ghcr.io/lukekarrys/node-sonos-http-api:latest
